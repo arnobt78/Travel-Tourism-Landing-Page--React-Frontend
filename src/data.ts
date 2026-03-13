@@ -1,21 +1,22 @@
-import tour1 from './images/tour-1.jpeg';
-import tour2 from './images/tour-2.jpeg';
-import tour3 from './images/tour-3.jpeg';
-import tour4 from './images/tour-4.jpeg';
+import type { PageLinkItem, SocialLinkItem, ServiceItem, TourItem } from './types'
 
-export const pageLinks = [
+/** Navigation and footer link entries (anchor href + label) */
+export const pageLinks: PageLinkItem[] = [
   { id: 1, href: '#home', text: 'home' },
   { id: 2, href: '#about', text: 'about' },
   { id: 3, href: '#services', text: 'services' },
   { id: 4, href: '#tours', text: 'tours' },
-];
-export const socialLinks = [
+]
+
+/** Social media links with Font Awesome icon classes */
+export const socialLinks: SocialLinkItem[] = [
   { id: 1, href: 'https://www.twitter.com', icon: 'fab fa-facebook' },
   { id: 2, href: 'https://www.twitter.com', icon: 'fab fa-twitter' },
   { id: 3, href: 'https://www.twitter.com', icon: 'fab fa-squarespace' },
-];
+]
 
-export const services = [
+/** Services section content */
+export const services: ServiceItem[] = [
   {
     id: 1,
     icon: 'fas fa-wallet fa-fw',
@@ -34,12 +35,13 @@ export const services = [
     title: 'amazing comfort',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
   },
-];
+]
 
-export const tours = [
+/** Featured tours - images live in public/images/ so use root paths */
+export const tours: TourItem[] = [
   {
     id: 1,
-    image: tour1,
+    image: '/images/tour-1.jpeg',
     date: 'august 26th, 2020',
     title: 'Tibet Adventure',
     info: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.`,
@@ -49,7 +51,7 @@ export const tours = [
   },
   {
     id: 2,
-    image: tour2,
+    image: '/images/tour-2.jpeg',
     date: 'october 1th, 2020',
     title: 'best of java',
     info: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.`,
@@ -59,7 +61,7 @@ export const tours = [
   },
   {
     id: 3,
-    image: tour3,
+    image: '/images/tour-3.jpeg',
     date: 'september 15th, 2020',
     title: 'explore hong kong',
     info: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.`,
@@ -69,7 +71,7 @@ export const tours = [
   },
   {
     id: 4,
-    image: tour4,
+    image: '/images/tour-4.jpeg',
     date: 'december 5th, 2019',
     title: 'kenya highlights',
     info: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.`,
@@ -77,4 +79,4 @@ export const tours = [
     duration: 20,
     cost: 3300,
   },
-];
+]
